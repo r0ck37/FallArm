@@ -189,24 +189,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 
             String json = ps.bowlingJson(s);
             String response = ps.post(url,json);
-
-            /*
-            socket = new Socket("172.20.15.112", 8080);
-            dataOutputStream = new DataOutputStream(socket.getOutputStream());
-            dataInputStream = new DataInputStream(socket.getInputStream());
-            // build string, use this data text to carry over to server
-            String acceleroData = "Accelerometer " + textAccelX.getText().toString() + " "
-                    + textAccelY.getText().toString() + " " + textAccelZ.getText().toString();
-            String gyroData = "Gyroscope " + textGyroX.getText().toString() + " " + textGyroY.getText().toString()
-                    + " " + textGyroZ.getText().toString();
-            String locationData = "Location " + textLatitude.getText().toString() + " "
-                    + textLongitude.getText().toString();
-            dataOutputStream.writeUTF(android_id);
-            dataOutputStream.writeUTF(acceleroData); // write string to server
-            dataOutputStream.writeUTF(gyroData);
-            dataOutputStream.writeUTF(locationData); // also send geo data
-            Log.i("filter", "Sensor Data is sent over the network!");
-   */
+            System.out.println(response);
 
         } catch (UnknownHostException e) {
             e.printStackTrace();

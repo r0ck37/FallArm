@@ -10,6 +10,7 @@ import okhttp3.Response;
 
 /**
  * Created by rocket on 7/13/16.
+ * This is used to post json data to server.
  */
 
 public class PostServer {
